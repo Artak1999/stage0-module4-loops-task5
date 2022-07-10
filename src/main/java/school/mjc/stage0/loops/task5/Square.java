@@ -5,9 +5,9 @@ public class Square {
         for (int i = 1; i <= sideLength; i++) {
             for (int j = 1; j <= sideLength; j++) {
                 if (i == 1 || i == sideLength)
-                    System.out.print("*");
+                    System.out.print(8);
                 else if (j == 1 || j == sideLength)
-                    System.out.print("*");
+                    System.out.print(8);
                 else
                     System.out.print(" ");
             }

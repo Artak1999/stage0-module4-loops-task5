@@ -5,9 +5,9 @@ public class Triangle {
         for (int i = 0; i < cathetusLength; i++) {
             for (int j = 0; j < cathetusLength; j++) {
                 if(i > j)
-                    System.out.print("*");
+                    System.out.print(8);
                 else if(i == j)
-                    System.out.print("*");
+                    System.out.print(8);
                 else
                     System.out.print(" ");
             }
