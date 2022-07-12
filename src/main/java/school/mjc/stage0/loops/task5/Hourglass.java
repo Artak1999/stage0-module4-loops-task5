@@ -10,14 +10,14 @@ public class Hourglass {
             for(int c=(height/2)-r+1;c>0;c--)
                 System.out.print(" ");
             for(int c=((2*r)-1);c>0;c--)
-                System.out.print("*");
+                System.out.print("8");
             System.out.println();
         }
         for(int r=1; r<(int)totalRow; r++){
             for(int c=(height/2)-r; c>0; c--)
                 System.out.print(" ");
             for(int c=0; c<=((2*r)); c++)
-                System.out.print("*");
+                System.out.print("8");
             System.out.println();
         }
     }
