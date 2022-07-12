@@ -2,22 +2,22 @@ package school.mjc.stage0.loops.task5;
 
 public class Hourglass {
     public void printHourglassOfGivenSize(int height) {
-        for (int i=0; i<= height-1; i++){
-            for (int j=0; j<=i; j++){
+        double totalRow;
+        if(height % 2 == 0)
+            height += 1;
+        totalRow = ( ((double)height) / 2) + 0.5;
+        for(int r=(int)totalRow; r>0; r--){
+            for(int c=(height/2)-r+1;c>0;c--)
                 System.out.print(" ");
-            }
-            for (int k=0; k<=height-1-i; k++){
-                System.out.print(8 + " ");
-            }
+            for(int c=((2*r)-1);c>0;c--)
+                System.out.print("*");
             System.out.println();
         }
-        for (int i = 0; i < height; i++) {
-            for (int j = height; j >= i; j--) {
+        for(int r=1; r<(int)totalRow; r++){
+            for(int c=(height/2)-r; c>0; c--)
                 System.out.print(" ");
-            }
-            for (int j = 1; j <= i; j++) {
-                System.out.print(8 + " ");
-            }
+            for(int c=0; c<=((2*r)); c++)
+                System.out.print("*");
             System.out.println();
         }
     }
